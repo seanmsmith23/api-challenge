@@ -20,5 +20,5 @@ RSpec.describe QueriesController, :type => :controller do
     expect(response.body).to eq("[{\"filename\":\"opposites.txt\",\"key\":\"Boulder, CO\",\"value\":\"Houston\"},{\"filename\":\"opposites.txt\",\"key\":\"Led Zeppelin\",\"value\":\"Maroon 5\"},{\"filename\":\"opposites.txt\",\"key\":\"Led Zeppelin\",\"value\":\"lameness\"},{\"filename\":\"opposites.txt\",\"key\":\"platypuses\",\"value\":\"likely things\"},{\"filename\":\"second.txt\",\"key\":\"Ghana\",\"value\":\"Accra\"},{\"filename\":\"second.txt\",\"key\":\"Kenya\",\"value\":\"Nairobi\"},{\"filename\":\"second.txt\",\"key\":\"Tanzania\",\"value\":\"Dar es Salaam\"},{\"filename\":\"second.txt\",\"key\":\"Uganda\",\"value\":\"Kampala\"}]")
   end
 
-  
+
 end

@@ -15,17 +15,7 @@ class ResultSorter
   def sort_results(params)
     order = sort_order(params)
 
-    @results.sort do |a, b|
-      if (a[order[:first]] <=> b[order[:first]]) == 0
-        if (a[order[:second]] <=> b[order[:second]]) == 0
-          a[order[:third]] <=> b[order[:third]]
-        else
-          a[order[:second]] <=> b[order[:second]]
-        end
-      else
-        a[order[:first]] <=> b[order[:first]]
-      end
-    end
+    @results.sort_by { |result| [result[order[:first]], result[order[:second]], result[order[:third]]] }
   end
 
   def sort_order(params)
