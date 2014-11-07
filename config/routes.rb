@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get '/query' => 'query#show', as: :query
+  get '/query' => 'queries#show', as: :query
 end

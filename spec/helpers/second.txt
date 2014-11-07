@@ -1,0 +1,4 @@
+Kenya\tNairobi
+Uganda\tKampala
+Tanzania\tDar es Salaam
+Ghana\tAccra
